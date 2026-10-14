@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px 25px;
+    color: #1e293b;
+}
+
+header h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+    color: #005ca9;
+}
+
+header p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #64748b;
+    letter-spacing: 0.5px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+form {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+
+input {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+
+    transition: all 0.5s ease;
+}
+
+input:hover {
+    border-color: #80b9e0;
+    transform: scale(1.01);
+}
+
+input:focus {
+    outline: none;
+    border-color: #80b9e0;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #005ca9;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    color: #333;
+    transform: scale(1.01);
+}
+
+footer {
+    background-color: #e4eff8;
+    color: #000000;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+

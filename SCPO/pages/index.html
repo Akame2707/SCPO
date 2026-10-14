@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <title>SCPO</title>
+</head>
+
+<body>
+    <!--Aqui ficara os elementos principais do nosso formulario :3-->
+    <header>
+        <h1>Sistema de Controle</h1>
+        <p>Em Participação em Oficinas </p>
+    </header>
+    <main>
+        <form id="scpo">
+
+            <label for="oficina">Digite o nome da sua oficina: </label>
+            <input type="text" id="oficina">
+
+            <br><br>
+            <label for="vaga">Informe o número total de vagas: </label>
+            <input type="number" id="vaga">
+
+            <br><br>
+
+            <label for="inscritos">Informe a quantidade de pessoas inscritas: </label>
+            <input type="number" id="inscritos">
+
+            <br><br>
+
+            <label for="novop">Quantidade de novos participantes: </label>
+
+            <input type="number" id="novop">
+
+            <br><br>
+
+            <label for="monitores">Insira a quantidade de monitores disponiveis: </label>
+            <input type="number" id="monitores">
+
+
+            <p id="erro_m"></p>
+
+            <button type="submit">Enviar</button>
+            <p id="erro1"></p>
+            <p id="erro2"></p>
+            <p id="erro3"></p>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>SCPO — Sistema de Controle de Participação em Oficinas</p>
+        <p>Desenvolvido para fins educacionais por Katryne & Gabriel | SENAI</p>
+        <p>&copy; 2026 — Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../Assets/js/script.js"></script>
+</body>
+
+</html>
