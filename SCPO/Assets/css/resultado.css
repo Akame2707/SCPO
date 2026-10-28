@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -7,20 +8,22 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
     background-color: #f1f5f9;
-    color: #333;
+    color: #334155;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     text-align: center;
     padding: 35px 20px 25px;
-    color: #1e293b;
 }
 
 header h1 {
     font-family: 'Outfit', sans-serif;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 8px;
@@ -28,7 +31,6 @@ header h1 {
 }
 
 header p {
-    font-family: 'Manrope', sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
     color: #64748b;
@@ -36,18 +38,96 @@ header p {
 }
 
 main {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    max-width: 750px;
+    margin: 10px auto 35px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dbe7f2;
+    border-radius: 12px;
     text-align: center;
-    padding: 10px 20px;
+    box-shadow: 0 4px 15px rgba(0, 92, 169, 0.06);
+    flex: 1;
+}
+
+main h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    color: #005ca9;
+    margin-bottom: 20px;
+}
+
+main > p {
+    font-size: 0.95rem;
+    margin: 12px 0;
+    color: #475569;
+}
+
+main span {
+    color: #005ca9;
+    font-weight: 800;
+}
+
+main h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    color: #005ca9;
+    margin: 30px 0 18px;
+}
+
+#listaNomes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+#listaNomes p {
+    background-color: #f1f8ff;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    color: #334155;
+    transition: 0.2s;
+}
+
+#listaNomes p:hover {
+    background-color: #e0efff;
+    border-color: #80b9e0;
+    transform: translateY(-2px);
 }
 
 footer {
     background-color: #e4eff8;
-    color: #000000;
+    color: #475569;
     text-align: center;
     padding: 18px;
     font-size: 13px;
     line-height: 1.8;
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        width: 94%;
+        padding: 20px 15px;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    #listaNomes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        padding: 15px 10px;
+        font-size: 12px;
+    }
 }
