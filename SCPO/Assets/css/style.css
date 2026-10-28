@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
@@ -8,15 +8,17 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Manrope', sans-serif;
     background-color: #f1f5f9;
-    color: #333;
+    color: #334155;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     text-align: center;
     padding: 35px 20px 25px;
-    color: #1e293b;
 }
 
 header h1 {
@@ -29,7 +31,6 @@ header h1 {
 }
 
 header p {
-    font-family: 'Manrope', sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
     color: #64748b;
@@ -41,74 +42,106 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 form {
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
-    max-width: 400px;
+    max-width: 430px;
     padding: 30px;
+    border: 1px solid #dbe7f2;
     border-radius: 10px;
-    box-shadow: 0 4px 12px #00000015;
+    box-shadow: 0 4px 15px rgba(0, 92, 169, 0.07);
 }
 
 label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
 }
-
-
 
 input {
     width: 100%;
-    padding: 7px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 15px;
-
-    transition: all 0.5s ease;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    color: #334155;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
 input:hover {
     border-color: #80b9e0;
-    transform: scale(1.01);
 }
 
 input:focus {
     outline: none;
-    border-color: #80b9e0;
+    border-color: #005ca9;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 92, 169, 0.08);
 }
-
 
 button {
     width: 100%;
     padding: 12px;
+    margin-top: 10px;
     background-color: #005ca9;
-    color: white;
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 16px;
+    color: #ffffff;
+    border: 1px solid #005ca9;
+    border-radius: 6px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
     cursor: pointer;
     transition: 0.3s;
 }
 
 button:hover {
-    color: #333;
-    transform: scale(1.01);
+    background-color: #ffffff;
+    color: #005ca9;
+}
+
+#erro_m,
+#erro1,
+#erro2,
+#erro3 {
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 6px;
 }
 
 footer {
     background-color: #e4eff8;
-    color: #000000;
+    color: #475569;
     text-align: center;
     padding: 18px;
+    margin-top: 25px;
     font-size: 13px;
     line-height: 1.8;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    form {
+        padding: 22px;
+    }
+
+    footer {
+        padding: 15px 10px;
+        font-size: 12px;
+    }
 }
 
